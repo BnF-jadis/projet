@@ -1,0 +1,108 @@
+{
+  "corpus": {
+    "city_name": "",
+    "min_scale": 1000,
+    "max_scale": 50000,
+    "resolution_ppi": 256
+  },
+  "networking": {
+    "metadata": {
+      "maps": {
+        "filesnames_column": "filesnames"
+      },
+      "columns": [
+        {
+          "name": "date",
+          "distance": "auto",
+          "weight": 2,
+          "log": 0
+        },
+        {
+          "name": "scale",
+          "distance": "numerical",
+          "weight": 0.5,
+          "log": 1
+        },
+        {
+          "name": "subject",
+          "distance": "categorical",
+          "weight": 0.5
+        },
+        {
+          "name": "language",
+          "distance": "auto",
+          "weight": 0.25
+        },
+        {
+          "name": "publisher",
+          "distance": "auto",
+          "weight": 1
+        },
+        {
+          "name": "publisher_city",
+          "distance": "auto",
+          "weight": 0.25
+        },
+        {
+          "name": "title",
+          "distance": "auto",
+          "weight": 1
+        }
+      ]
+    },
+    "visual_features": {
+      "weight": 10,
+      "HOG": {
+        "angle_bins": 180,
+        "reduce_size_factor": 4
+      }
+    },
+    "gephi": {
+      "n_neighbours": 10
+    }
+  },
+  "cnn": {
+    "training_params": {
+      "learning_rate": 5e-05,
+      "batch_size": 1,
+      "make_patches": false,
+      "training_margin": 0,
+      "n_epochs": 25,
+      "data_augmentation": true,
+      "data_augmentation_max_rotation": 6.28,
+      "data_augmentation_max_scaling": 0.5,
+      "data_augmentation_flip_lr": true,
+      "data_augmentation_flip_ud": true,
+      "data_augmentation_color": false,
+      "evaluate_every_epoch": 5,
+      "weights_labels": [1, 1, 1]
+    },
+    "gpu": "0",
+    "patch_size": 1000
+  },
+  "segment": {
+    "classes": [[0, 0, 0], [0, 255, 255], [255, 255, 255]],
+    "model": "jadis_standard"
+  },
+  "anchor": {
+    "streetwidth_coef": 4,
+    "image_maxsize": 15000,
+    "admin_level": 8
+  },
+  "matching": {
+    "Lowes": {
+      "min": 0.75,
+      "max": 1.0,
+      "bins": 20
+    },
+    "RANSAC": [
+      150,
+      175,
+      200,
+      225,
+      250
+    ],
+    "anchoring_score": 1.0,
+    "secondary_anchor_score": 0.6
+  }
+}
