@@ -180,12 +180,7 @@ def HHOG(df: pd.core.frame.DataFrame, angle_bins: int=180, reduce_size_factor: f
             fd = hog(image, orientations=angle_bins, pixels_per_cell=(32, 32), cells_per_block=(1, 1), 
                                 visualize=False, feature_vector=False)
 
-            histogram = np.zeros((angle_bins)).tolist()
-            size = fd.shape[0]*fd.shape[1]
-            fd = fd[:,:,0,0].ravel('F')
-
-            for bin_i in range(len(histogram)):
-                histogram[bin_i] += np.sum(fd[bin_i*size:(bin_i+1)*size])/size
+            histogram = np.sum(np.sum(fd[:,:,0,0], axis=0), axis=0)
 
             np.save(os.path.join(save_HHOG_path, name), histogram)
             
