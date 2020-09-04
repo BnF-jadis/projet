@@ -16,7 +16,7 @@ La documentation concernant le fonctionnement des algorithmes de segmentation et
 ## Installation facile
 
 1. Installez [Anaconda](https://docs.anaconda.com/anaconda/install/)
-2. Téléchargez le programme JADIS (sur cette page, bouton Code > Download zip), décompressez-le et placez-
+2. [Téléchargez le programme JADIS](https://github.com/BnF-jadis/projet/archive/master.zip), décompressez-le et placez-
 le dans le dossier de votre choix, par exemple sur le Bureau
 3. [Téléchargez le réseau de neurones entraîné](https://drive.google.com/file/d/13iRsEwFv9tTe68v5d_dXlEAJj9sn0qsb/view?usp=sharing),
 décompressez-le et placez-le dans le dossier JADIS
