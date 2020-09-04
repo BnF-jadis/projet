@@ -7,7 +7,7 @@ Le projet JADIS est issu d'une collaboration scientifique entre la Bibliothèque
 
 L'algorithme comprend deux axes principaux. Le premier vise à vectoriser automatiquement les cartes à l'aide d'un réseau neuronal. Le second vise à créer un réseau de similarité pour réaligner les cartes entre elles. Le tronc principal du programme permet ensuite d'identifier les similarités géométriques entre les cartes vectorisées pour déterminer la position des cartes les unes par rapport aux autres et également par rapport au tissu urbain actuel. 
 
-## [Documentation](https://github.com/BnF-jadis/projet/blob/master/Jadis_manuel.pdf)
+## Documentation
 
 * [Manuel d'installation et d'utilisation](https://github.com/BnF-jadis/projet/blob/master/Jadis_manuel.pdf). Le programme est conçu pour être entièrement utilisable par des utilisateurs qui ne savent pas programmer.
 * [Description vulgarisée du fonctionnement des algorithmes de segmentation et de réalignement](https://github.com/BnF-jadis/projet/blob/master/documentation_Jadis.pdf).
