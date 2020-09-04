@@ -13,7 +13,7 @@ Un manuel d'utilisation très détaillé est disponible [sur ce lien](https://gi
 
 La documentation concernant le fonctionnement des algorithmes de segmentation et de réalignement est disponible sur ce lien.
 
-## Installation facile (extrait du manuel d'utilisation)
+## Installation facile
 
 1. Installez [Anaconda](https://docs.anaconda.com/anaconda/install/)
 2. Téléchargez le programme JADIS (sur cette page, bouton Code > Download zip), décompressez-le et placez-
