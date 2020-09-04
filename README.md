@@ -24,8 +24,8 @@ de commandes, installée par défaut et accessible via la recherche. À défaut,
 5. Vous vous trouvez dans l’un des dossiers de votre ordinateur, en général le dossier source de votre compte. Le nom du dossier est indiqué à gauche de votre curseur, par exemple
 ```Users\Remi``` ou ```~Remi $```. Sur Unix (Mac, Linux), vous pouvez taper ``` ls ``` pour lister les fichiers situés dans le répertoire où vous vous trouvez.
 6. Naviguez jusqu’au dossier JADIS dans votre ordinateur. Par exemple, s’il se trouve sur votre
-Bureau, le chemin sera probablement Desktop/JADIS :
-``` cd Desktop/JADIS ```
+Bureau, le chemin sera probablement Desktop/projet-master :
+``` cd Desktop/projet-master ```
 7. Utilisez la fonction setup.py pour installer le programme :
 ``` python setup.py ```
 8. Lorsque l’invite de commande vous demande si vous souhaitez continuer, tapez y puis retour.
