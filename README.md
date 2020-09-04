@@ -11,7 +11,7 @@ L'algorithme comprend deux axes principaux. Le premier vise à vectoriser automa
 
 Un manuel d'utilisation très détaillé est disponible [sur ce lien](https://github.com/BnF-jadis/projet/blob/master/Jadis_manuel.pdf). Le programme est conçu pour être entièrement utilisable par des utilisateurs qui ne savent pas programmer.
 
-La documentation concernant le fonctionnement des algorithmes de segmentation et de réalignement est disponible sur ce lien.
+La documentation concernant le fonctionnement des algorithmes de segmentation et de réalignement est disponible [sur ce lien](https://github.com/BnF-jadis/projet/blob/master/documentation_Jadis.pdf).
 
 ## Installation facile
 
