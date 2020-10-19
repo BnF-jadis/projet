@@ -8,7 +8,7 @@
   "networking": {
     "metadata": {
       "maps": {
-        "filesnames_column": "filesnames"
+        "filesnames_column": "path"
       },
       "columns": [
         {
