@@ -151,7 +151,7 @@ def categoricalDistance(array: np.ndarray, df: pd.core.frame.DataFrame, col: str
     return array
 
 
-def HHOG(df: pd.core.frame.DataFrame, angle_bins: int=180, reduce_size_factor: float=4):
+def HHOG(df: pd.core.frame.DataFrame, angle_bins: int=180, reduce_size_factor: float=4, filesnames_column: str = 'path'):
     ''' Compute the HHOG (histogram of histogram of oriented gradient) for each image in the dataset
     Input(s):
         df: metadata dataframe
@@ -163,8 +163,8 @@ def HHOG(df: pd.core.frame.DataFrame, angle_bins: int=180, reduce_size_factor: f
     '''
     project_name = getProjectName()
     save_HHOG_path = os.path.join('save', project_name, 'HHOG')
-
-    paths = df['filesnames'].values
+    print('PRINT', filesnames_column, '\n')
+    paths = df[filesnames_column].values
             
     histograms = []
     
@@ -174,7 +174,7 @@ def HHOG(df: pd.core.frame.DataFrame, angle_bins: int=180, reduce_size_factor: f
 
         if not(os.path.isfile(os.path.join(save_HHOG_path, name + '.npy'))):
 
-            image = cv2.imread(file, 0)
+            image = cv2.imread(path, 0)
             image = cv2.resize(image, (int(np.around(image.shape[1])/reduce_size_factor), 
                                        int(np.around(image.shape[0])/reduce_size_factor)))
             fd = hog(image, orientations=angle_bins, pixels_per_cell=(32, 32), cells_per_block=(1, 1), 
@@ -196,7 +196,7 @@ def HHOG(df: pd.core.frame.DataFrame, angle_bins: int=180, reduce_size_factor: f
 
 def HOGSimilarityDistance(input_array: np.ndarray, df: pd.core.frame.DataFrame, weight: int = 1, 
                           angle_bins: int = 180, reduce_size_factor: int = 4, 
-                          out_p_value: bool = False):
+                          out_p_value: bool = False, filesnames_column: str = 'path'):
     ''' Compute the correlation between the HHOG of each image in the dataset and return it as graph normalized weighted edges, giving a measure of the visual similarity between images
     Input(s):
         input_array: input matrix to which the result will be added. Could be a zeros-filled matrix
@@ -213,7 +213,7 @@ def HOGSimilarityDistance(input_array: np.ndarray, df: pd.core.frame.DataFrame, 
     
     save_HHOG_path = os.path.join('save', getProjectName(), 'HHOG')
 
-    histograms = HHOG(df, angle_bins=angle_bins, reduce_size_factor=reduce_size_factor)
+    histograms = HHOG(df, angle_bins=angle_bins, reduce_size_factor=reduce_size_factor, filesnames_column=filesnames_column)
     
     r_corr = np.zeros((len(df), len(df)))
     p_value = np.zeros((len(df), len(df)))
@@ -256,7 +256,8 @@ def computeSimilarityMatrix(settings: dict, df_metadata: pd.core.frame.DataFrame
         array = HOGSimilarityDistance(input_array = array, df = df_metadata, 
                                       weight = settings['visual_features']['weight'], 
                                       angle_bins = settings['visual_features']['HOG']['angle_bins'],
-                                      reduce_size_factor = settings['visual_features']['HOG']['reduce_size_factor'])
+                                      reduce_size_factor = settings['visual_features']['HOG']['reduce_size_factor'],
+                                      filesnames_column = settings['metadata']['maps']['filesnames_column'])
     
     for i, column in enumerate(settings['metadata']['columns']):
         if column['name'] in df_metadata.columns:
