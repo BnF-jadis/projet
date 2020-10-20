@@ -35,7 +35,7 @@ print('Matrice de similarité sauvegardée.')
 np.save(os.path.join('save', project_name, 'network_matrix', 'matrix.npy'), similarity_matrix)
 
 graph = createGraph(array = similarity_matrix, N_neighbours = settings['networking']['gephi']['n_neighbours'])
-nx.write_gexf(graph, os.path.join('export', project_name, 'gephi'))
+nx.write_gexf(graph, os.path.join('export', project_name, 'gephi', 'graph.gexf'))
 print('Réseau exporté au format Gephi')
 print(nx.info(graph))
 
