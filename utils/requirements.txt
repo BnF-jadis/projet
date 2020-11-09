@@ -54,7 +54,6 @@ nbformat==4.4.0
 networkx==2.3
 nms==0.1.6
 notebook==6.0.1
-numpy==1.18.1
 olefile==0.46
 opencv-contrib-python==3.4.2.17
 opencv-python==3.4.2.16
@@ -99,9 +98,9 @@ six==1.12.0
 sklearn==0.0
 smmap2==2.0.5
 soupsieve==1.9.5
-tensorboard==1.13.1
+tensorboard==1.15.0
 tensorflow==1.15.2
-tensorflow-estimator==1.13.0
+tensorflow-estimator==1.15.1
 termcolor==1.1.0
 terminado==0.8.2
 testpath==0.4.2
