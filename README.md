@@ -18,18 +18,21 @@ L'algorithme comprend deux axes principaux. Le premier vise à vectoriser automa
 2. [Téléchargez le programme JADIS](https://github.com/BnF-jadis/projet/archive/master.zip), décompressez-le et placez-
 le dans le dossier de votre choix, par exemple sur le Bureau
 3. [Téléchargez le réseau de neurones entraîné](https://drive.google.com/file/d/13iRsEwFv9tTe68v5d_dXlEAJj9sn0qsb/view?usp=sharing),
-décompressez-le et placez-le dans le dossier JADIS
-4. Ouvrez une invite de commande. Sur Windows 7, 8 ou 10, vous pourrez utiliser l’application Invite
+décompressez-le et placez-le dans le dossier principal JADIS
+4. 3.	Si nécessaire, installez un compilateur pour C, tel gcc (https://gcc.gnu.org/install/binaries.html). Sur Mac, installez plus simplement XCode (https://apps.apple.com/us/app/xcode/id497799835)
+5. Ouvrez une invite de commande. Sur Windows 7, 8 ou 10, vous pourrez utiliser l’application Invite
 de commandes, installée par défaut et accessible via la recherche. À défaut, vous pouvez utiliser par exemple Anaconda prompt. Sur Linux/Fedora ou sur Mac, utilisez Terminal.
-5. Vous vous trouvez dans l’un des dossiers de votre ordinateur, en général le dossier source de votre compte. Le nom du dossier est indiqué à gauche de votre curseur, par exemple
+6. Vous vous trouvez dans l’un des dossiers de votre ordinateur, en général le dossier source de votre compte. Le nom du dossier est indiqué à gauche de votre curseur, par exemple
 ```Users\Remi``` ou ```~Remi $```. Sur Unix (Mac, Linux), vous pouvez taper ``` ls ``` pour lister les fichiers situés dans le répertoire où vous vous trouvez.
-6. Naviguez jusqu’au dossier JADIS dans votre ordinateur. Par exemple, s’il se trouve sur votre
+7. Naviguez jusqu’au dossier JADIS dans votre ordinateur. Par exemple, s’il se trouve sur votre
 Bureau, le chemin sera probablement Desktop/projet-master :
 ``` cd Desktop/projet-master ```
-7. Utilisez la fonction setup.py pour installer le programme :
+8.	Créez un nouvel environnement conda pour le projet : ``` conda create -n jadis python=3.6 ```
+9.	Activez votre environnement conda. __Cette commande doit être répétée à nouveau à chaque nouvelle session d’utilisation !__ : ``` conda activate jadis ```
+10. Utilisez la fonction setup.py pour installer le programme :
 ``` python setup.py ```
-8. Lorsque l’invite de commande vous demande si vous souhaitez continuer, tapez y puis retour.
-9. Si l’installation échoue, vérifiez votre connexion internet et ré-essayez une deuxième fois.
+11. Lorsque l’invite de commande vous demande si vous souhaitez continuer, tapez ``` y ``` puis _retour à la ligne_.
+12. Si l’installation échoue, vérifiez votre connexion internet et ré-essayez une deuxième fois.
 
 ## Licence
 CC BY 3.0 FR (Résumé ci-dessous)
