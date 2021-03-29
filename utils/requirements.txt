@@ -75,7 +75,7 @@ psutil==5.6.7
 ptyprocess==0.6.0
 py-cpuinfo==5.0.0
 py4j==0.10.8.1
-Pygments==2.4.2
+Pygments==2.7.4
 pyparsing==2.4.2
 pyrsistent==0.15.4
 pyshp==2.1.0
