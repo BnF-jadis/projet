@@ -52,7 +52,7 @@ Selon les conditions suivantes :
 Rémi Petitpierre. (2020). BnF-jadis/projet: v1.0-beta (beta). Zenodo. https://doi.org/10.5281/zenodo.6594483
 ```
 @software{petitpierre_bnf-jadis_2020,
-  author       = {Rémi Petitpierre},
+  author       = {R{\'{e}}mi Petitpierre},
   title        = {BnF-jadis/projet: v1.0-beta},
   month        = Mar,
   year         = 2020,
