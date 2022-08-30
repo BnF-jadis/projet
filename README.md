@@ -48,3 +48,18 @@ Selon les conditions suivantes :
 * Attribution — Vous devez créditer l'Œuvre, intégrer un lien vers la licence et indiquer si des modifications ont été effectuées à l'Oeuvre. Vous devez indiquer ces informations par tous les moyens raisonnables, sans toutefois suggérer que l'Offrant vous soutient ou soutient la façon dont vous avez utilisé son Oeuvre.
 * Pas de restrictions complémentaires — Vous n'êtes pas autorisé à appliquer des conditions légales ou des mesures techniques qui restreindraient légalement autrui à utiliser l'Oeuvre dans les conditions décrites par la licence.
 
+### Citation
+Rémi Petitpierre. (2020). BnF-jadis/projet: v1.0-beta (beta). Zenodo. https://doi.org/10.5281/zenodo.6594483
+```
+@software{petitpierre_bnf-jadis_2020,
+  author       = {Rémi Petitpierre},
+  title        = {BnF-jadis/projet: v1.0-beta},
+  month        = Mar,
+  year         = 2020,
+  publisher    = {Zenodo},
+  version      = {beta},
+  doi          = {10.5281/zenodo.6594483},
+  url          = {https://doi.org/10.5281/zenodo.6594483}
+}
+```
+
