@@ -1,3 +1,5 @@
+This is the French version. [**\[Read in English\]**](README_en.md)
+
 # Projet JADIS
 
 Le projet JADIS est issu d'une collaboration scientifique entre la Bibliothèque nationale de France (BnF) et l'Ecole Polytechnique Fédérale de Lausanne (EPFL). Les buts du projet sont les suivants:
@@ -19,8 +21,8 @@ L'algorithme comprend deux axes principaux. Le premier vise à vectoriser automa
 le dans le dossier de votre choix, par exemple sur le Bureau
 3. [Téléchargez le réseau de neurones entraîné](https://drive.google.com/file/d/13iRsEwFv9tTe68v5d_dXlEAJj9sn0qsb/view?usp=sharing),
 décompressez-le et placez-le dans le dossier principal JADIS
-4. 3.	Si nécessaire, installez un compilateur pour C, tel gcc (https://gcc.gnu.org/install/binaries.html). Sur Mac, installez plus simplement XCode (https://apps.apple.com/us/app/xcode/id497799835)
-5. Ouvrez une invite de commande. Sur Windows 7, 8 ou 10, vous pourrez utiliser l’application Invite
+4.	Si nécessaire, installez un compilateur pour C, tel gcc (https://gcc.gnu.org/install/binaries.html). Sur Mac, installez plus simplement XCode (https://apps.apple.com/us/app/xcode/id497799835)
+5. Ouvrez une invite de commande. Sur Windows, vous pourrez utiliser l’application Invite
 de commandes, installée par défaut et accessible via la recherche. À défaut, vous pouvez utiliser par exemple Anaconda prompt. Sur Linux/Fedora ou sur Mac, utilisez Terminal.
 6. Vous vous trouvez dans l’un des dossiers de votre ordinateur, en général le dossier source de votre compte. Le nom du dossier est indiqué à gauche de votre curseur, par exemple
 ```Users\Remi``` ou ```~Remi $```. Sur Unix (Mac, Linux), vous pouvez taper ``` ls ``` pour lister les fichiers situés dans le répertoire où vous vous trouvez.
@@ -28,7 +30,7 @@ de commandes, installée par défaut et accessible via la recherche. À défaut,
 Bureau, le chemin sera probablement Desktop/projet-master :
 ``` cd Desktop/projet-master ```
 8.	Créez un nouvel environnement conda pour le projet : ``` conda create -n jadis python=3.6 ```
-9.	Activez votre environnement conda. __Cette commande doit être répétée à nouveau à chaque nouvelle session d’utilisation !__ : ``` conda activate jadis ```
+9.	Activez votre environnement conda : ``` conda activate jadis ```. Cette commande doit être répétée à nouveau à chaque nouvelle session d’utilisation. 
 10. Utilisez la fonction setup.py pour installer le programme :
 ``` python setup.py ```
 11. Lorsque l’invite de commande vous demande si vous souhaitez continuer, tapez ``` y ``` puis _retour à la ligne_.
