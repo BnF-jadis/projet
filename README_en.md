@@ -1,5 +1,9 @@
 Ceci est la version anglaise. [**\[Lire en français\]**](README.md)
 
+[![license](https://img.shields.io/badge/license-CC%20BY%203.0%20FR-brightgreen)](https://creativecommons.org/licenses/by/3.0/fr/)
+[![open issues](https://isitmaintained.com/badge/open/BnF-jadis/project.svg)](https://github.com/BnF-jadis/projet/issues)
+[![DOI](https://zenodo.org/badge/247013885.svg)](https://zenodo.org/badge/latestdoi/247013885)
+
 # JADIS Project
 
 The JADIS project stems from a scientific collaboration between the BnF, French National Library, and EPFL, Swiss Federal Institute of Technology in Lausanne. The objectives of the project are the following:
