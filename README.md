@@ -1,5 +1,9 @@
 This is the French version. [**\[Read in English\]**](README_en.md)
 
+[![license](https://img.shields.io/badge/license-CC%20BY%203.0%20FR-brightgreen)](https://creativecommons.org/licenses/by/3.0/fr/)
+[![open issues](https://isitmaintained.com/badge/open/BnF-jadis/project.svg)](https://github.com/BnF-jadis/projet/issues)
+[![DOI](https://zenodo.org/badge/247013885.svg)](https://zenodo.org/badge/latestdoi/247013885)
+
 # Projet JADIS
 
 Le projet JADIS est issu d'une collaboration scientifique entre la Bibliothèque nationale de France (BnF) et l'Ecole Polytechnique Fédérale de Lausanne (EPFL). Les buts du projet sont les suivants:
