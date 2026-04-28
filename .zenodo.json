@@ -1,0 +1,41 @@
+{
+    "creators": [
+        {
+            "name": "Petitpierre, Remi",
+            "orcid": "0000-0001-9138-6727",
+            "affiliation": "Ecole Polytechnique Fédérale de Lausanne (EPFL); Bibliothèque nationale de France (BnF)",
+            "type": "Researcher"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Aniesa, Ange",
+            "affiliation": "Bibliothèque nationale de France (BnF)",
+            "type": "Supervisor"
+        },
+        {
+            "name": "Ion, Cristina",
+            "orcid": "0000-0001-7214-6031",
+            "affiliation": "Bibliothèque nationale de France (BnF)",
+            "type": "Supervisor"
+        }
+    ],
+    "title": "Projet JADIS: Réalignement automatique des cartes historiques de Paris (1760-1949)",
+    "description": "Le projet JADIS est issu d'une collaboration scientifique entre la Bibliothèque nationale de France (BnF) et l'Ecole Polytechnique Fédérale de Lausanne (EPFL). Les buts du projet sont les suivants:\n\n* Développer un algorithme permettant de géolocaliser et réaligner automatiquement les collections cartographiques avec une précision au niveau de la rue.\n* Réaligner les résultats sur la base de données des noms de rues historiques pour permettre la fouille des cartes de Paris par les noms de rues d’époque.\n\nL'algorithme comprend deux axes principaux. Le premier vise à vectoriser automatiquement les cartes à l'aide d'un réseau neuronal. Le second vise à créer un réseau de similarité pour réaligner les cartes entre elles. Le tronc principal du programme permet ensuite d'identifier les similarités géométriques entre les cartes vectorisées pour déterminer la position des cartes les unes par rapport aux autres et également par rapport au tissu urbain actuel.",
+    "version": "1.0.1",
+    "access_right": "open",
+    "keywords": [
+        "historical maps",
+        "digital urban history",
+        "history of Paris",
+        "road networks",
+        "georeferencing",
+        "deformation"
+    ],
+    "license": "CC-BY-3.0",
+    "upload_type": "software",
+    "language": "fra",
+    "communities": [
+        {"identifier": "epfl"}
+    ]
+}
